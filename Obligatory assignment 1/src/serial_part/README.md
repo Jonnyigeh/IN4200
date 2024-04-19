@@ -1,6 +1,6 @@
 To compile the code, use the following command:
 ```console
-   > gcc serial_main.c read_graph_from_file_v2.c read_graph_from_file_v1.c dijkstra_serial_v1.c dijkstra_serial_v2.c find_min_index.c -fopenmp -o main
+   gcc serial_main.c read_graph_from_file_v2.c read_graph_from_file_v1.c dijkstra_serial_v1.c dijkstra_serial_v2.c find_min_index.c -fopenmp -o main
 ```
 The -fopenmp flag to run the timer to compare runtimes of both regular matrix and CSR matrix version. Will output to main.
 
