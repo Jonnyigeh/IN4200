@@ -17,6 +17,6 @@ make parallel_main
 ```
 and then it can be ran, with proper parameters $\kappa$, number of iterations, infile, outfile (in that order) - also stating how many cores should be used as
 ```console
-mpirun -np 4 0.1 25 \path\to\infile.jpg \path\to\outfile.jpg
+mpirun -np 4 ./parallel_main.exe 0.1 25 \path\to\infile.jpg \path\to\outfile.jpg
 ```
 where this example uses 4 cores, $\kappa=0.1$ and 25 iterations. 
