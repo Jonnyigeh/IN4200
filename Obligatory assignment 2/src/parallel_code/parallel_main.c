@@ -104,12 +104,12 @@ int main(int argc, char *argv[])
 
   if (my_rank==0) {
     export_JPEG_file(output_jpeg_filename, image_chars, m, n, c, 75);
+    free(image_chars);
   }
 
   // Free the memory allocated for the image structs and the 1D arrays
   deallocate_image (&u);
   deallocate_image (&u_bar);
-  free(image_chars);
   free(my_image_chars);
 
   MPI_Finalize ();
